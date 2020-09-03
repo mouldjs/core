@@ -1,0 +1,10 @@
+{
+  "name": "@mouldjs/code",
+  "version": "0.0.1",
+  "description": "Mould Core",
+  "repository": "https://github.com/mouldjs/core.git",
+  "keywords": [
+    "mould",
+    "components"
+  ]
+} 
