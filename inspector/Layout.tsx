@@ -22,8 +22,7 @@ import {
 import { Text, Slider } from '@modulz/radix'
 import { Inspector } from '../types'
 import { intersection } from 'ramda'
-// TODO Import utils
-// import { nameToParam } from '../app/utils'
+import { nameToParam } from '../utils'
 
 export type LayoutSizeUnit = 'px' | '%' | 'auto'
 
@@ -91,7 +90,7 @@ export const transformLayout = (
     return {
         width: layoutSizeToString(width),
         height: layoutSizeToString(height),
-        // overflow: nameToParam(overflow) as 'visible' | 'hidden' | undefined,
+        overflow: nameToParam(overflow) as 'visible' | 'hidden' | undefined,
         opacity: opacity / 100 + '',
         rotate: rotation,
         radius: radiusStr,
