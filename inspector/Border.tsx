@@ -12,8 +12,7 @@ import { Text } from '@modulz/radix'
 import { Plus, Minus } from 'react-feather'
 import { TitledBoard, ControlGrid, ControlGridItem } from './FormComponents'
 import { ColorControl, Color, transformColorToStr } from './Color'
-// TODO Create Icons
-// import { BorderAll, BorderOutside } from '../resources/Icons'
+import { BorderAll, BorderOutside } from '../resources/Icons'
 import { Checkbox } from './Checkbox'
 import { Inspector } from '../types'
 
@@ -241,7 +240,7 @@ export const BorderInspector: Inspector<BorderPropTypes> = ({
                                         })
                                     }}
                                 >
-                                    {/* <BorderAll></BorderAll> */}
+                                    <BorderAll></BorderAll>
                                 </Button>
                                 <Button
                                     active={splittedWidth}
@@ -259,7 +258,7 @@ export const BorderInspector: Inspector<BorderPropTypes> = ({
                                         })
                                     }}
                                 >
-                                    {/* <BorderOutside></BorderOutside> */}
+                                    <BorderOutside></BorderOutside>
                                 </Button>
                             </ButtonGroup>
                         </div>
