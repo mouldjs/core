@@ -1,28 +1,42 @@
 {
-  "name": "@mouldjs/code",
-  "version": "0.0.1",
-  "description": "Mould Core",
-  "repository": "https://github.com/mouldjs/core.git",
-  "keywords": [
-    "mould",
-    "core"
-  ],
-  "peerDependencies": {
-    "react": "^16.8.0"
-  },
-  "dependencies": {
-    "@blueprintjs/core": "^3.31.0",
-    "@blueprintjs/select": "^3.13.7",
-    "@modulz/radix": "^0.0.1-beta.44",
-    "ramda": "^0.27.1",
-    "react-color": "^2.18.1",
-    "react-feather": "^2.0.8",
-    "react-form": "^4.0.1",
-    "zod": "^1.11.4"
-  },
-  "devDependencies": {
-    "@types/ramda": "^0.27.14",
-    "@types/react": "^16.9.49",
-    "react": "^16.13.1"
-  }
+    "name": "@mouldjs/code",
+    "version": "0.0.1",
+    "description": "Mould Core",
+    "repository": "https://github.com/mouldjs/core.git",
+    "keywords": [
+        "mould",
+        "core"
+    ],
+    "peerDependencies": {
+        "react": "^16.8.0"
+    },
+    "dependencies": {
+        "@blueprintjs/core": "^3.31.0",
+        "@blueprintjs/select": "^3.13.7",
+        "@modulz/radix": "^0.0.1-beta.44",
+        "ramda": "^0.27.1",
+        "react-color": "^2.18.1",
+        "react-feather": "^2.0.8",
+        "react-form": "^4.0.1",
+        "zod": "^1.11.4"
+    },
+    "devDependencies": {
+        "@types/ramda": "^0.27.14",
+        "@types/react": "^16.9.49",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.3.0",
+        "prettier": "^2.1.1",
+        "react": "^16.13.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{ts,tsx,js,css,json,md}": [
+            "prettier --write",
+            "git add"
+        ]
+    }
 }
